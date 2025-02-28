@@ -1,0 +1,99 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  background-color: #222;
+}
+
+.header-link{
+  text-decoration: none;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.header__company-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__user-dropdown {
+  position: relative;
+}
+
+.header__user-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header__user-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header__dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-width: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.header__dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header__dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header__company-name {
+    font-size: 1em;
+  }
+
+  .header__user-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__dropdown-menu {
+    top: 40px;
+    min-width: 120px;
+  }
+
+  .header__dropdown-item {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+}
